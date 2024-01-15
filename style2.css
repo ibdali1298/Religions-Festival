@@ -1,0 +1,98 @@
+header{
+    width: 100%;
+    height: 500px;   
+    background: linear-gradient(rgba(0, 0, 0, 0.144),rgba(0, 0, 0, 0.144)),url(/images/img10.webp);
+    background-size: cover;
+    color: aliceblue;
+    background-position: center;  
+}
+.container a{
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+   
+}
+.bg{
+    font-size: 30px;
+    font-family: 'Philosopher', sans-serif;
+}
+.dropdown a{
+    color: black;
+}
+.ff{
+    font-size: 70px;
+    font-family: 'Satisfy', cursive;
+}
+.bb a{
+    color: black; 
+}
+.one{
+  margin-right: 13%;
+}
+.br{
+    font-family: 'Philosopher', sans-serif; 
+    font-size: 30px;
+}
+
+.f1{
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+.f2{
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+                                         /* FOOTER CSS */
+
+                                         .fmbg{
+                                            background: linear-gradient(rgba(0, 0, 0, 0.808),rgba(0, 0, 0, 0.856));
+                                           }
+                                           .single-content{
+                                               padding: 115px 0;
+                                               text-align: center;
+                                           }
+                                           .single-box h3{
+                                               font-size: 16px;
+                                               font-weight: 700;
+                                               color: white;
+                                               font-family: 'Courgette', cursive;
+                                           }
+                                           .single-box .card-area i{
+                                               color: white;
+                                               font-size: 20px;
+                                               margin-right: 10px;
+                                           }
+                                           .single-box ul{
+                                               list-style: none;
+                                               padding: 0;
+                                           }
+                                           .single-box ul li a{
+                                               text-decoration: none;
+                                               color: white;
+                                               line-height: 2.5;
+                                               font-weight: 100;
+                                               font-family: 'Philosopher', sans-serif;
+                                           }
+                                           .single-box h2{
+                                               color: white;
+                                               font-size: 20px;
+                                               font-weight: 700;
+                                               font-family: 'Courgette', cursive;
+                                           }
+                                           #basic-addon2{
+                                               background: rgb(211, 21, 170);
+                                               color: white;
+                                           }
+                                           .social i{
+                                               font-size: 18px;
+                                               margin-right: 15px;
+                                           }
+                                       
+                                       
+                                           .fot4{
+                                             background-image: linear-gradient(rgba(0, 0, 0, 0.200),rgba(0, 0, 0, 0.526)),url(./images/fesimg\ 1.jpg);
+                                               background-position: center;
+                                               height: 290PX;
+                                               background-size: cover;
+                                               
+                                          }

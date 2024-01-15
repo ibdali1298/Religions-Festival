@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link rel="icon" href="/images3/fav icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Kalam&family=Satisfy&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Kalam&family=Philosopher&family=Satisfy&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Kalam&family=Kaushan+Script&family=Philosopher&family=Satisfy&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Kalam&family=Kaushan+Script&family=Philosopher&family=Satisfy&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalam&family=Kaushan+Script&family=PT+Sans&family=Philosopher&family=Satisfy&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Courgette&family=Edu+TAS+Beginner&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalam&family=Kaushan+Script&family=PT+Sans&family=Philosopher&family=Satisfy&display=swap"
+  rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link
+  href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Edu+TAS+Beginner&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalam&family=Kaushan+Script&family=PT+Sans&family=Philosopher&family=Satisfy&display=swap"
+  rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Edu+TAS+Beginner&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalam&family=Kaushan+Script&family=PT+Sans&family=Philosopher&family=Satisfy&family=Vollkorn&display=swap"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+    }
+
+    #myVideo {
+      width: 100%;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    .content {
+      position: fixed;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+      z-index: 2;
+      transition: transform 0.3s ease-out;
+    }
+
+    .content.hide {
+      transform: translateY(100%);
+    }
+
+    #myBtn {
+      width: 200px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    #myBtn:hover {
+      background: #ddd;
+      color: black;
+    }
+
+    #myBtn1 {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(253, 252, 252);
+  color: rgb(8, 8, 8);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn1:hover {
+  background-color: #555;
+}
+  </style>
+</head>
+
+<body>
+
+  <button onclick="topFunction()" id="myBtn1"><i class="fa fa-arrow-circle-o-up fa-2x" aria-hidden="true"></i></button>
+  <script>
+    let mybutton = document.getElementById("myBtn1");
+    window.onscroll = function(){scrollFunction()};
+  
+    function scrollFunction(){
+      if(document.body.scrollTop > 20 || document.documentElement.scrollTop>20){
+        mybutton.style.display = "block";
+      }
+      else{
+        mybutton.style.display = "none";
+      }
+    }
+  
+    function topFunction(){
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <header>
+    <nav class="navbar navbar-expand-lg  navclr">
+      <div class="container ">
+        <a class="navbar-brand bg" href="#">F E S T I V A L</a>
+        <button class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about us.html">About Us</a>
+            </li>
+            <div class="dropdown"> 
+              <a href="backup.html" class="btn btn-dark text-white">Category
+              </a>
+             
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="feednackk.html" class="btn btn-dark text-white">feedback</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+ 
+  
+  <div class="container ">
+    <div class="row text-center">
+      <div class="col-12">
+        <br>
+        <H2 class="text-center h2">INDIAN EVENTS :</H2><br>
+        <img src="/images/fes img3.jpg " height="350px" width="700px"alt="">
+      </div>
+
+      <div class="col-12 h3">
+        <br>
+        <P class="P1">Many modern festivals and holidays originated in religious celebrations. These celebrations
+          usually included sacred communal meals,<br> from which term festivals, also called feasts, was derived. And the
+          word holiday originally meant “holy day.” Holidays celebrating <br>historic events and other occasions developed
+          later.
+          Festivals are a significant part of Indian culture, acting as a vehicle <br> for the presentation of our values and
+          emotions.</P>
+      </div>
+
+    </div>
+
+    <div class="row text-center">
+      <div class="col-12">
+        <br>
+        <H2 class="text-center h2">MUSLIM EVENTS :</H2><br>
+        <img src="/images/fes im5.jpg"height="350px" width="700px" alt="">
+      </div>
+
+      <div class="col-12 h3">
+        <br>
+        <P class="P1">
+          Most historians believe that Islam originated with Muhammad's mission in Mecca and Medina at the start of the
+          7th century CE, although <br> Muslims regard this time as a return to the original faith passed down by the
+          Abrahamic prophets, such as Adam, Noah,<br> Abraham, Moses, David, Solomon, and Jesus, with the submission.
+          Islam has two official holidays: <br> Eid Al-Fitr and Eid Al-Adha. The former is celebrated at the end of the month
+         <br> of Ramadan, whereas Eid Al-Adha lands on the 10th day of the final <br>month of the Islamic calendar.
+          According to Muslim tradition <br> Eid al-Fitr was  originated by the <br> Islamic prophet Muhammad.</P>
+      </div>
+
+
+      <div class="col-12 h3">
+        <br>
+        <H2 class="text-center h2">CHIRISTIAN EVENTS :</H2><br>
+        <img src="/images/fes img5.jpg" height="350px" width="700px" alt="">
+      </div>
+
+      <div class="col-12 h3">
+        <br>
+        <P class="P1">
+          Christianity developed in Judea in the mid-first century CE, based first on the teachings of Jesus and later
+          on the writings and <br> missionary work of Paul of Tarsus. Originally, Christianity was a small, unorganized sect
+          that promised personal <br>salvation after death.
+          After the death and resurrection of Jesus, Christianity first emerged <br>as a sect of Judaism as practiced in the
+          Roman province of Judea. The first <br> Christians were all Jews,who constituted a Second Temple Jewish sect <br>  with
+          an apocalyptic eschatology.</P>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-12 h3">
+          <br>
+          <H2 class="text-center h2">TAOISM EVENTS :</H2><br>
+          <img src="/images/fes img6.jpg" height="350px" width="700px" alt="">
+        </div>
+
+        <div class="col-12 h3">
+          <br>
+          <P class="P1">
+            Taoism has been connected to the philosopher Lao Tzu, who around 500 B.C.E. wrote the main book of Taoism,
+            the  Tao Te <br> Ching. Taoism holds that humans and animals should live in balance with the Tao, or the universe.
+            Taoists believe <br> in spiritual immortality, where the spirit of the body joins the universe after death.The
+            Nine Emperor <br> Gods Festival (Chinese: 九皇爺誕; Malay: Perayaan Sembilan Maharaja Dewa; Thai: เทศกาลกินเจ) <br> or
+            Vegetarian  Festival or Jay Festival is a nine-day Taoist celebration beginning <br> on the eve of the  ninth lunar
+            month of the Chinese calendar,  <br>celebrated primarily  in Southeast Asian <br> countries such as Malaysia</P>
+        </div>
+
+      </div>
+
+      <div class="row text-center">
+        <div class="col-12">
+          <br>
+          <H2 class="text-center h2">BUDDISM EVENTS :</H2><br>
+          <img src="/images3/mabgimg1.jpg"
+          height="350px" width="700px"  alt="">
+        </div>
+
+        <div class="col-12 h3">
+          <br>
+          <P class="P1">
+            The most significant celebration happens every May on the night of the full moon, when Buddhists all over
+            the world celebrate <br> the birth, enlightenment and death of the Buddha over 2,500 years ago. It has become to
+            be known as Buddha Day.  <br>Buddhist  Festivals are always joyful occasions.
+            Wesak. Celebrated on the full moon in May, this is the most<br>  important Buddhist holiday. It is celebrated to
+            commemorate the death and birth of  Buddha<br>  and to remember how the Buddha  became enlightened. It is also an
+            opportunity<br>  for Buddhists to try to gain their own enlightenment.</P>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <footer class="container-fluid fmbg">
+    <div class="row text-center ">
+     <div class="col-lg-3 col-sm-6">
+         <div class="single-box">
+             <img src="/images/logoimg1.png" class="img-fluid" style="height: 80px;" alt=""><br><br>
+             <p class="text-white">The website footer is the section of content at the very bottom of a web page.</p><br>
+             <h3>We Accept</h3>
+             <div class="card-area">
+                 <i class="fab fa-cc-visa"></i>
+                 <i class="fab fa-credit-card"></i>
+                 <i class="fab fa-cc-mastercard"></i>
+                 <i class="fab fa-cc-paypal"></i>
+             </div>
+         </div>
+     </div>
+
+     <div class="col-lg-2 col-sm-6 mt-4">
+        <div class="single-box">
+             <h2>Visit Us</h2>
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="gallery.html">Gallery</a></li>
+                 <li><a href="about us.html">About Us</a></li>
+                 <li><a href="contact.html">Contact Us</a></li>
+                 <li><a href="feednackk.html">Feedback</a></li>
+               
+             </ul>
+        </div>
+     </div>
+     <div class="col-lg-2 col-sm-6 mt-4">
+         <div class="single-box">
+              <h2>Categary</h2>
+              <ul>
+                  <li><a href="backup.html">Chiristian</a></li>
+                  <li><a href="backup.html">Islam</a></li>
+                  <li><a href="backup.html">Hinduism</a></li>
+                  <li><a href="backup.html">Taoism</a></li>
+                  <li><a href="backup.html">Buddism</a></li>
+              </ul>
+         </div>
+      </div>
+      
+      <div class="col-lg-5 col-sm-6 fot4  ">
+         <div class="single-box mt-4">
+            <h2>Follow Us</h2>
+         <p class="text-white">Footers are located in the margin area at the bottom of a page.</p>
+         <div class="input-group mb-3">
+             <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+             <span class="input-group-text" id="basic-addon2"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+           </div> 
+           <h2>Follow Us On</h2> 
+           <p class="socials text-white">
+             <i class="fab fa-facebook-f"></i>
+             <i class="fab fa-dribbble"></i>
+             <i class="fab fa-pinterest"></i>
+             <i class="fab fa-twitter"></i>
+           </p>  
+         </div>
+      </div>
+    </div>
+
+   
+
+   
+ </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+      </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

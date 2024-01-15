@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link rel="icon" href="/images3/fav icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Kalam&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Kalam&family=Philosopher&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Kalam&family=Kaushan+Script&family=Philosopher&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Kalam&family=Kaushan+Script&family=Philosopher&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalam&family=Kaushan+Script&family=PT+Sans&family=Philosopher&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Courgette&family=Edu+TAS+Beginner&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalam&family=Kaushan+Script&family=PT+Sans&family=Philosopher&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Edu+TAS+Beginner&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalam&family=Kaushan+Script&family=PT+Sans&family=Philosopher&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Edu+TAS+Beginner&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalam&family=Kaushan+Script&family=PT+Sans&family=Philosopher&family=Satisfy&family=Vollkorn&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+ 
+    * {
+    margin: 0;
+    padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+    }
+
+    #myVideo {
+      width: 100%;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    .content {
+      position: fixed;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+      z-index: 2;
+      transition: transform 0.3s ease-out;
+    }
+
+    .content.hide {
+      transform: translateY(100%);
+    }
+
+    #myBtn {
+      width: 200px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    #myBtn:hover {
+      background: #ddd;
+      color: black;
+    }
+
+    .pp {
+      font-family: 'Courgette', cursive;
+      border: none;
+    }
+
+    /* .ff {
+      font-family: 'Philosopher', sans-serif;
+      width: max-content;
+      font-size: 72px;
+      position: relative;
+      cursor: pointer;
+      margin: 100px auto;
+    }
+    .ff::after{
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      height: 4px;
+      width: 100%;
+      left: 0;
+      background-color: #000;
+      transition: 0.3s;
+      transition-timing-function: ease-in-out;
+      transform: scaleX(0);
+    } */
+    .h1:hover::after{
+      transform: scaleX(1);
+    }
+
+    .bp {
+      font-family: 'Philosopher', sans-serif;
+    }
+
+    .b3 {
+      background-image: url(/images/fesimg10.webp);
+      height: 300px;
+      background-repeat: no-repeat;
+      width: 100% !important;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .b4 {
+      height: 100px;
+      /* width: 100%; */
+      width: 98%;
+      background: #f7f6f6a6;
+      margin-top: 15%;
+      position: absolute;
+      color: wheat;
+    }
+
+    .sb {
+      margin-left: 30%;
+      margin-top: 0;
+    }
+
+    .cb {
+     border: none;
+   
+            border-radius: 10px;
+            overflow: hidden;
+          
+            transition: transform 0.3s;
+           
+    }
+    .cb:hover {
+            transform: scale(1.05);
+    }
+
+    .bh {
+      background-image: linear-gradient(rgba(78, 76, 76, 0.733), rgba(3, 0, 0, 0.822)), url(/images3/imgbg10.jpg);
+      height: 500px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .circle img {
+      border-radius: 50%;
+
+      width: 200px;
+      margin-left: 42%;
+
+    }
+
+    .img-area {
+      position: absolute;
+      width: 160px;
+      height: 150px;
+      border: 5px solid #fff;
+      overflow: hidden;
+      top: 10px;
+      left: 110px;
+      border-radius: 50%
+    }
+
+    #myBtn1 {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(253, 252, 252);
+  color: rgb(8, 8, 8);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn1:hover {
+  background-color: #555;
+}
+.bn11{
+  background-image: url('');
+  background-image:  url(https://img.freepik.com/premium-vector/flag-garland-white-blue-red-pennants-chain-party-bunting-decoration-triangle-celebration-flags_497399-536.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1696636800&semt=ais);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+  </style>
+</head>
+
+<body>
+<button onclick="topFunction()" id="myBtn1"><i class="fa fa-arrow-circle-o-up fa-2x" aria-hidden="true"></i></button>
+<script>
+  let mybutton = document.getElementById("myBtn1");
+  window.onscroll = function(){scrollFunction()};
+
+  function scrollFunction(){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop>20){
+      mybutton.style.display = "block";
+    }
+    else{
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<div class="pre-loader">
+<img class="loading-gif" src="./images3/l-unscreen.gif" alt="">
+</div>
+<script>
+  window.addEventListener('load',function(){
+    document.querySelector('.pre-loader').className += ' hidden';
+  });
+</script>
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg  navclr">
+      <div class="container ">
+        <a class="navbar-brand bg" href="#">F E S T I V A L</a>
+        <button class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about us.html">About Us</a>
+            </li>
+            <div class="dropdown"> 
+              <a href="backup.html" class="btn btn-dark text-white">Category
+              </a>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="feednackk.html" class="btn btn-dark text-white">feedback</a>
+            </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <video autoplay muted loop id="myVideo">
+    <source src="./images/banner.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="content">
+    <h1 class="text-center">TOP FESTIVAL AROUND THE WORLD</h1>
+
+    <button id="myBtn btn btn-outline-dark" onclick="myFunction()" class="btn btn-dark mybtn">Pause</button>
+  </div>
+
+  <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    var content = document.querySelector(".content");
+
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+
+    var lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+      var st = window.pageYOffset || document.documentElement.scrollTop;
+      if (st > lastScrollTop) {
+        // scrolled down
+        content.classList.add("hide");
+      } else {
+        // scrolled up
+        content.classList.remove("hide");
+      }
+      lastScrollTop = st <= 0 ? 0 : st; // For mobile or negative scrolling
+    });
+  </script>
+ 
+  <div class="container mt-3">
+    <div class="text-center ff mt-3">
+      <h1>Choose Your Festival</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 text-dark">
+        <br><br>
+        <p class="pp">looking to book tickets for your favorite festivals? We've got you covered! With our convenient
+          online platform, you can easily browse through a wide variety of festivals and secure your bookings in just a
+          few clicks. Whether you're into music festivals, cultural events, or food fairs, we have something to cater to
+          every taste and interest. Don't miss out on the opportunity to immerse yourself in the magic of festivals -
+          start booking your tickets today and get ready for an unforgettable experience!</p>
+        <a href="backup.html"  class="btn btn-outline-dark bp" style="height: 40px; width: 100px;">See More</a>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+        <img src="https://cityfurnish.com/blog/wp-content/uploads/2023/03/glastonbury-festival-Andrew-Allcock-min.jpg" class="img-fluid"
+          style="height: 300px; width: 500px;" alt="1">
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- <div class="container"> -->
+    <div class="container-fluid text-center b3">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-12" style="height: 100px !important;">
+
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12" style="height: 100px !important;">
+            
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12" style="background-color: rgba(245, 222, 179, 0.637); height: 100px !important;">
+             <h4>Venue US</h4>
+              <form class="row g-3">
+                <div class="col-md-3 col-lg-3 col-sm-3 col-3">
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-3 col-3">
+               
+                  <div class="input-group mb-3">
+                  
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>Choose...</option>
+                      <option value="1">Chiristian</option>
+                      <option value="2">Islam</option>
+                      <option value="3">Hinduism</option>
+                      <option value="3">Taoism</option>
+                      <option value="3">Buddism</option>
+                    </select>
+                  </div>
+
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-3 col-3">
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="search">
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-3 col-3">
+                </div>
+                </form>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  <!-- </div> -->
+
+  <div class="container-fluid bg-secondary bn11">
+    <div id="carouselcont" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <h1 class="text-center mt-3 ff">What Our Clients Say</h1>
+        <div class="carousel-inner ">
+            <div class="carousel-item active ">
+              <div class="div circle">
+                <img src="/images/img19.jpg" class="imag-area img-fluid" alt="">
+              </div>
+                <div class="row p-5 ">
+                    <div class="col-lg-12">
+                        <h4 class="text-center h2">Muslim history</h4>
+                        <div class="card-body cb text-center">
+                          <p class="pp">Most historians believe that Islam originated with Muhammad's mission in Mecca and Madina <br> at the start of the 7th century CE, although Muslims regard this time as a return <br> to the original faith passed down by the Abrahamic prophets, such as Adam, Noah, <br> Abraham, Moses, David, Solomon, and Jesus, with the submission</p>
+                        </div>
+                        <!-- <h2 class="text-center">F E S T I V A L</h2>
+                        <h1 class="text-center">----*----</h1> -->
+                    
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="div circle">
+                <img src="/images/img13.jpg" class="imag-area img-fluid" alt="">
+              </div>
+                <div class="row p-5">
+                    <div class="col-lg-12">
+                        <h4 class="text-center h2">Chiristion history</h4>
+                        <div class="card-body cb text-center">
+                          <p class="pp">Christianity developed in Judea in the mid-first century CE, based first on the teachings of Jesus and later on the writings <br> and missionary work of Paul of Tarsus. Originally, Christianity was a small, unorganized sect that promised <br> personal salvation after death.The founder of Christianity was Jesus Christ who lived about 2,000 <br> years ago.The Bible, the holy book of the Christians, narrates the life and teachings of Jesus</p>
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+            </div>
+
+            <div class="carousel-item ">
+              <div class="div circle">
+                <img src="/images/img28.jpg" class="imag-area" alt="">
+              </div>
+                <div class="row p-5">
+                    <div class="col-lg-12">
+                        <h4 class="text-center h2">Hinduism history</h4>
+                        <div class="card-body cb text-center">
+                          <p class="pp">Most scholars believe Hinduism started somewhere between 2300 B.C. and 1500 B.C. <br>  in the Indus Valley, near modern-day Pakistan. But many Hindus argue that their faith <br> is timeless and has always existed. Unlike other religions, Hinduism<br>  has no one founder but is instead a fusion of various beliefs.</p>
+                        </div>
+                   
+                    </div>
+                  
+                </div>
+            </div>
+
+            <div class="carousel-item ">
+              <div class="div circle">
+                <img src="/images/fesimg13.jpg" class="imag-area" alt="">
+              </div>
+                <div class="row p-5">
+                    <div class="col-lg-12">
+                      
+                        <h4 class="text-center h2">Taoism history</h4>
+                        <div class="card-body cb text-center">
+                          <p class="pp">aoism (also spelled Daoism) is a religion and a philosophy from ancient China that has <br> influenced folk and national belief. Taoism has been connected to the philosopher <br>Lao Tzu, who around 500 B.C.E. wrote the main book of<br> Taoism, the Tao Te Ching.</p>
+                        </div>
+                       
+                    </div>
+                  
+                </div>
+            </div>
+
+            <div class="carousel-item ">
+              <div class="div circle">
+                <img src="/images/fesimg14.jpg" class="imag-area" alt="">
+              </div>
+                <div class="row p-5">
+                    <div class="col-lg-12">
+                    
+                        <h4 class="text-center h2">Buddism history</h4>
+                        <div class="card-body cb text-center">
+                          <p class="pp">Buddhism arose in Ancient India, in and around the ancient Kingdom of Magadha, and <br> is based on the teachings of the renunciate Siddhārtha Gautama. The <br> religion evolved as it spread from the northeastern region of the  <br>Indian subcontinent throughout Central, East, and Southeast Asia.</p>
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+            </div>
+
+        </div>
+          </div>
+        </div> 
+  <div class="container-fluid bh">
+    <div class="row ct">
+      <h3 class="text-center text-white mt-3 ff">Upcoming Events</h3>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-2">
+        <div class="card cb mt-4">
+          <img src="./images/img20.jpg" alt="">
+          <div class="card-body cb">
+            <h5>Islamic New <br> Year :</h5>
+            <p class="pp">
+              Muharram is the first month of the Islamic calendar. Muharram begins </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="card cb mt-4">
+          <img src="./images/fesomg8.jpg" alt="">
+          <div class="card-body cb">
+            <h5>Epiphany :</h5>
+            <p class="pp">
+              Epiphany celebrates Jesus' first appearance to the Gentiles, as represented.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="card cb mt-4">
+          <img src="./images/img29.jpg" alt="">
+          <div class="card-body cb">
+            <h5>Holi :</h5>
+            <p class="pp">
+
+              Holi is a Hindu festival that takes place every spring.The Holi festival always </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="card cb mt-4">
+          <img src="./images/fesimg12.png" alt="">
+          <div class="card-body cb">
+            <h5>Lantern Festival :</h5>
+            <p class="pp">
+
+              Lantern Festival aims to promote reconciliation, peace,and <br>vrified </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2"></div>
+
+
+    </div>
+  </div>
+
+ 
+  <footer class="container-fluid fmbg mt-3">
+    <div class="row text-center ">
+     <div class="col-lg-3 col-sm-6">
+         <div class="single-box">
+             <img src="/images/logoimg1.png" class="img-fluid" style="height: 80px;" alt=""><br><br>
+             <p class="text-white">The website footer is the section of content at the very bottom of a web page.</p><br>
+             <h3>We Accept</h3>
+             <div class="card-area">
+                 <i class="fab fa-cc-visa"></i>
+                 <i class="fab fa-credit-card"></i>
+                 <i class="fab fa-cc-mastercard"></i>
+                 <i class="fab fa-cc-paypal"></i>
+             </div>
+         </div>
+     </div>
+
+     <div class="col-lg-2 col-sm-6 mt-4">
+        <div class="single-box">
+             <h2>Visit Us</h2>
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="gallery.html">Gallery</a></li>
+                 <li><a href="about us.html">About Us</a></li>
+                 <li><a href="contact.html">Contact Us</a></li>
+                 <li><a href="feednackk.html">Feedback</a></li>
+               
+             </ul>
+        </div>
+     </div>
+     <div class="col-lg-2 col-sm-6 mt-4">
+         <div class="single-box">
+              <h2>Categary</h2>
+              <ul>
+                  <li><a href="backup.html">Chiristian</a></li>
+                  <li><a href="backup.html">Islam</a></li>
+                  <li><a href="backup.html">Hinduism</a></li>
+                  <li><a href="backup.html">Taoism</a></li>
+                  <li><a href="backup.html">Buddism</a></li>
+              </ul>
+         </div>
+      </div>
+      
+      <div class="col-lg-5 col-sm-6 fot4  ">
+         <div class="single-box mt-4">
+            <h2>Follow Us</h2>
+         <p class="text-white">Footers are located in the margin area at the bottom of a page.</p>
+         <div class="input-group mb-3">
+             <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+             <span class="input-group-text" id="basic-addon2"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+           </div> 
+           <h2>Follow Us On</h2> 
+           <p class="socials text-white">
+             <i class="fab fa-facebook-f"></i>
+             <i class="fab fa-dribbble"></i>
+             <i class="fab fa-pinterest"></i>
+             <i class="fab fa-twitter"></i>
+           </p>  
+         </div>
+      </div>
+    </div>
+
+   
+
+   
+ </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

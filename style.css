@@ -1,0 +1,372 @@
+/* Scroll Bar */
+   /* width */
+   ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(206, 1, 155); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ee29b3; 
+  }
+
+  /* Scroll bar End */
+header{
+    width: 100%;
+    /* height: 100vh;   */
+  
+    /* background: linear-gradient(rgba(0, 0, 0, 0.144),rgba(0, 0, 0, 0.144)),url(/images/img8.jpg); */
+    background-size: cover;
+    color: aliceblue;
+    background-position: center;  
+}
+.container a{
+    color: rgb(12, 12, 12);
+    font-family: 'Philosopher', sans-serif;
+   
+}
+.bg{
+    font-size: 30px;
+    font-family: 'Philosopher', sans-serif;
+}
+.dropdown a{
+    color: black;
+}
+#myVideo{
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100vh;
+     
+}
+.content{
+    position: fixed;
+    bottom: 0;
+  
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    z-index: 2;
+    transition: transform 0.3s ease-out;
+}
+.content.hide{
+    transform: translateY(100%);
+}
+#myBtn{
+    width: 300px;
+    font-size: 50px;
+    padding: 10px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 20%;
+
+}
+.myBtn:hover {
+    background: white;
+    color: black;
+}
+.size{
+    margin-top: 16%;
+}
+.h3{
+    font-family: 'Hedvig Letters Serif', serif
+}
+.h2{
+    font-family: 'Courgette', cursive;
+}
+/* footer{
+    width: 100%;
+    position: 0;
+    bottom: 0;
+    background: linear-gradient(to right(to right, #00093c, #2d0b00));
+    color: #fff;
+    padding: 100px 0 30px;
+    border-bottom-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row1{
+width: 85%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: space-between;
+} */
+.fot {
+
+    font-family: 'Merienda', cursive;
+    text-decoration: none;
+    border-top-left-radius: 100px;
+    background: linear-gradient(to right, #010313, #352723);
+}
+.fot1{
+
+    background: linear-gradient(to right, #010313, #352723);
+    font-family: 'Merienda', cursive;
+    text-decoration: none;
+}
+.fot2{
+     background-image: linear-gradient(rgba(0, 0, 0, 0.200),rgba(0, 0, 0, 0.526)),url(./images/fesimg\ 1.jpg);
+}
+.navclr{
+    background: linear-gradient(rgba(177, 6, 106, 0.3),rgba(128, 6, 117, 0.726));
+    font-family: 'Merienda', cursive;
+    text-decoration: none;
+}
+.mybtn{
+    width: 100px;
+    height: 50%;
+}
+.P1{
+    font-size: 15px;
+}
+/* }
+    .btn1:hover{
+    background-color: linear-gradient(rgba(177, 6, 106, 0.3),rgba(128, 6, 117, 0.726));
+    } */
+    .btn11:hover {
+        background-color: rgb(223, 48, 135);
+      }
+  
+      .btn11 {
+        background-color: #ddd;
+  
+      }
+.link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(156, 132, 132, 0.2);
+    margin: 20px 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+
+}
+.link a:hover{
+    color: #ece6ea;
+    background-color:#d12988; 
+}
+.d1{
+    background-color:#ee60b0; 
+    height: 150px;
+    width: 400px;
+    /* margin-left: 35%; */
+}
+.d2{
+    height: 360px;
+    width: 400px;
+    /* margin-left: 35%; */
+    background-color: #010313; 
+}
+
+
+                             /* ABOUT US CSS */
+
+
+
+.img39{
+border-top-left-radius: 60px;
+border-bottom-right-radius: 60px;
+}
+.p{                      
+font-family: 'PT Sans', sans-serif;
+font-size: 20px;
+}
+.p1{
+font-family: 'PT Sans', sans-serif;
+font-size: 20px;                                 
+}
+.bb{
+ font-family: 'Philosopher', sans-serif; 
+}
+.cb{
+border: none;
+}
+
+                      /* CONTACT US CSS */
+
+
+   
+
+.font{
+    font-family: 'Philosopher', sans-serif; 
+}
+.bb{
+    /* background:linear-gradient(rgba(46, 2, 2, 0.144),rgba(59, 1, 1, 0.144)),url();; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.726)),url(./images/fesimg\ 1.jpg);
+}
+.dropdown a{
+    color: black;
+}
+.cf1{
+    /* height: 100px;
+    width: 100px;
+    background-color: #8f50ec; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.300),rgba(0, 0, 0, 0.726)),url(./images/img38.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    font-size: 80PX;
+    color: white;
+    
+}
+.h1{
+    font-family: 'Philosopher', sans-serif;   
+}
+.navclr{
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(211, 2, 124, 0.726));
+}
+
+                          /* Lord jesus Css */
+
+                          .lbg{
+                            background-image: linear-gradient(rgba(97, 97, 97, 0.473), rgba(61, 58, 58, 0.651)), url(https://imagedelivery.net/HHwzmHgltKa2rO5RHhbhqQ/8be2d580-6382-4d52-97af-91c8056c0e00/public);
+                            height: 500px;
+                              background-position: center;
+                              background-size: cover;
+                          }
+                          .ll{
+                            font-family: 'Hedvig Letters Serif', serif;
+                              width: max-content;
+                              font-size: 50px;
+                              position: relative;
+                              cursor: pointer;
+                              margin: 10px auto;
+                          }.ll::after{
+                              content: "";
+                              position: absolute;
+                              bottom: -5px;
+                              height: 4px;
+                              width: 100%;
+                              left: 0;
+                              background-color: #000;
+                              transition: 0.3s;
+                              transition-timing-function: ease-in-out;
+                              transform: scaleX(0);
+                            }
+                            .ll:hover::after{
+                              transform: scaleX(1);
+                            }
+
+                            /* PRE-LOADER */
+.loading-gif{
+    max-width: 500px;
+}
+.pre-loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #020102;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+.pre-loader.hidden{
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+                                     /* FOOTER CSS */
+
+                                     .fmbg{
+                                        background: linear-gradient(rgba(0, 0, 0, 0.808),rgba(0, 0, 0, 0.856));
+                                       }
+                                       .single-content{
+                                           padding: 115px 0;
+                                           text-align: center;
+                                       }
+                                       .single-box h3{
+                                           font-size: 16px;
+                                           font-weight: 700;
+                                           color: white;
+                                           font-family: 'Courgette', cursive;
+                                       }
+                                       .single-box .card-area i{
+                                           color: white;
+                                           font-size: 20px;
+                                           margin-right: 10px;
+                                       }
+                                       .single-box ul{
+                                           list-style: none;
+                                           padding: 0;
+                                       }
+                                       .single-box ul li a{
+                                           text-decoration: none;
+                                           color: white;
+                                           line-height: 2.5;
+                                           font-weight: 100;
+                                           font-family: 'Philosopher', sans-serif;
+                                       }
+                                       .single-box h2{
+                                           color: white;
+                                           font-size: 20px;
+                                           font-weight: 700;
+                                           font-family: 'Courgette', cursive;
+                                       }
+                                       #basic-addon2{
+                                           background: rgb(211, 21, 170);
+                                           color: white;
+                                       }
+                                       .social i{
+                                           font-size: 18px;
+                                           margin-right: 15px;
+                                       }
+                                   
+                                   
+                                       .fot4{
+                                         background-image: linear-gradient(rgba(0, 0, 0, 0.200),rgba(0, 0, 0, 0.526)),url(./images/fesimg\ 1.jpg);
+                                           background-position: center;
+                                           height: 290PX;
+                                           background-size: cover;
+                                           
+                                      }
+
+
+                                      /* UPWORD CSS */
+
+  
+                                      #myBtn1 {
+                                        display: none;
+                                        position: fixed;
+                                        bottom: 20px;
+                                        right: 30px;
+                                        z-index: 99;
+                                        font-size: 18px;
+                                        border: none;
+                                        outline: none;
+                                        background-color: rgb(253, 252, 252);
+                                        color: rgb(8, 8, 8);
+                                        cursor: pointer;
+                                        padding: 15px;
+                                        border-radius: 4px;
+                                      }
+                                      
+                                      #myBtn1:hover {
+                                        background-color: #555;
+                                      }

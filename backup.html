@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="icon" href="/images3/fav icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Kalam&family=Philosopher&family=Satisfy&display=swap"
+        rel="stylesheet">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Kalam&family=Kaushan+Script&family=Philosopher&family=Satisfy&display=swap"
+        rel="stylesheet">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Kalam&family=Kaushan+Script&family=Philosopher&family=Satisfy&display=swap"
+        rel="stylesheet">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalam&family=Kaushan+Script&family=PT+Sans&family=Philosopher&family=Satisfy&display=swap"
+        rel="stylesheet">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Edu+TAS+Beginner&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalam&family=Kaushan+Script&family=PT+Sans&family=Philosopher&family=Satisfy&display=swap"
+        rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Edu+TAS+Beginner&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalam&family=Kaushan+Script&family=PT+Sans&family=Philosopher&family=Satisfy&display=swap"
+        rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Edu+TAS+Beginner&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalam&family=Kaushan+Script&family=PT+Sans&family=Philosopher&family=Satisfy&family=Vollkorn&display=swap"
+        rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="style.css">
+
+    <style>
+        .btnnn {
+          
+            border-bottom: 1px solid rgb(201, 190, 190);
+            color: rgb(253, 250, 250);
+            font-size: 19px;
+            border-radius: 2px !important;
+        }
+
+        .btnnn:hover {
+            background-color: rgb(183, 181, 185);
+            border: 1px solid black;
+            color: rgb(56, 41, 41);
+        }
+
+        .sidebars {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.637),rgba(0, 0, 0, 0.712)),url(./images3/imgbg10.jpg);
+            background-position: center;
+            background-size: cover;
+            
+        }
+      .cb{
+        background-color: rgb(243, 238, 230);
+      }
+      .cc{
+        font-family: 'Philosopher', sans-serif;
+        font-size: 30px;
+      }
+       
+    </style>
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn1"><i class="fa fa-arrow-circle-o-up fa-2x" aria-hidden="true"></i></button>
+    <script>
+      let mybutton = document.getElementById("myBtn1");
+      window.onscroll = function(){scrollFunction()};
+    
+      function scrollFunction(){
+        if(document.body.scrollTop > 20 || document.documentElement.scrollTop>20){
+          mybutton.style.display = "block";
+        }
+        else{
+          mybutton.style.display = "none";
+        }
+      }
+    
+      function topFunction(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <nav class="navbar navbar-expand-lg  navclr">
+        <div class="container ">
+          <a class="navbar-brand bg" href="#">F E S T I V A L</a>
+          <button class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about us.html">About Us</a>
+              </li>
+              <div class="dropdown"> 
+                <a href="backup.html" class="btn btn-dark text-white">Category
+                </a>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="feednackk.html" class="btn btn-dark text-white">feedback</a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#cart"><i class='fas fa-shopping-cart' style='font-size:24px'></i>
+                    (<span
+                    class="total-count"></span>)</button>
+              </li>
+              <li class="nav-item">
+                <button class="clear-cart btn "><i class="fa fa-trash-o"  style='font-size:24px'></i>
+                </button>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cart">Cart (<span
+                class="total-count"></span>)</button>
+                <button class="clear-cart btn btn-danger">Clear Cart</button>
+                <a href="table.html"> Booking Details</a>
+          </div>
+        </div>
+      </nav> -->
+  
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12 p-5 sidebars">
+                <div class="nav flex-column">
+                    <h3 class="text-center cc text-white">Catergory</h3>
+                    <button class="nav-link active btnnn" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home1 ">Muslim</button>
+                    <button class="nav-link btnnn" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home2 ">Christian</button>
+                    <button class="nav-link btnnn" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home3 ">Hinduism</button>
+                    <button class="nav-link  btnnn" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home4 ">Buddhism</button>
+                    <button class="nav-link btnnn" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home5 ">Taiosm</button>
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-md-8 col-sm-12 cb">
+                <div class="tab-content" id="v-pills-tabContent ">
+                    <!-- Muslim event -->
+                    <div class="tab-pane active fade show " id="v-pills-home1">
+                        <!-- Your content for Muslim events -->
+                        <div class="container">
+                            <div class="row p-3">
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/Kaba-sharifKhanakaba.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Umrah&Hajj Festival</h3> -->
+                                            <h4 class="card-title">Umrah&Hajj Festival</h4>
+                                            <p class="card-text">Price: $15.5</p>
+                                            <a href="#" data-name="umrah&Hajj Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/eid ul fitr.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Eid-ul-Fitr Festival</h3> -->
+                                            <h4 class="card-title">Eid ul Fitr Festival</h4>
+                                            <p class="card-text">Price: $9.5</p>
+                                            <a href="#" data-name="Eid ul Fitr Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/eid ul adha pics.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Eid-ul-Adha Festival</h3> -->
+                                            <h4 class="card-title">Eid ul Adha Festival</h4>
+                                            <p class="card-text">Price: $9.5</p>
+                                            <a href="#" data-name="Eid ul Adha Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/eid muba.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Eid Mubarak Festival</h3> -->
+                                            <h4 class="card-title">Eid Mubarak Festival</h4>
+                                            <p class="card-text">Price: $12.5</p>
+                                            <a href="#" data-name="Eid Mubarak Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2nd row -->
+                            <div class="row p-3">
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/mahajir img1.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Mahajir day <br> Festuval </h4>
+                                            <p class="card-text">Price: $14.0</p>
+                                            <a href="#" data-name="Music Festival" data-price="0.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/basant11.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Basant Festival</h3> -->
+                                            <h4 class="card-title">Basant <br> Festival</h4>
+                                            <p class="card-text">Price: $5.8</p>
+                                            <a href="#" data-name="Basant Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/rabi ul awal.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Rabi-ul-Awal Festival</h3> -->
+                                            <h4 class="card-title">Rabi-ul-Awal Festival</h4>
+                                            <p class="card-text">Price: $12.12</p>
+                                            <a href="#" data-name="Rabi-ul-Awal Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/culture day.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>culture day</h3> -->
+                                            <h4 class="card-title">culture day Festival</h4>
+                                            <p class="card-text">Price: $7.5</p>
+                                            <a href="#" data-name="culture day" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Christian event -->
+                    <div class="tab-pane fade show " id="v-pills-home2">
+                        <!-- Your content for Christian events -->
+                        <div class="container">
+                            <div class="row p-3">
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/merry christmas.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Christmas Festival</h3> -->
+                                            <h4 class="card-title">Chrismis Festival</h4>
+                                            <p class="card-text">Price: $10.5</p>
+                                            <a href="#" data-name="Christmas Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/christian harvest festival.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Harvest Festival</h3> -->
+                                            <h4 class="card-title">Harvest <br>Festival</h4>
+                                            <p class="card-text">Price: $15.0</p>
+                                            <a href="#" data-name="Harvest Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/christian events.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Christian Festival</h3> -->
+                                            <h4 class="card-title">Christian Festival</h4>
+                                            <p class="card-text">Price: $13.7</p>
+                                            <a href="#" data-name="christian Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/church activities.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Church Activities</h3> -->
+                                            <h4 class="card-title">church <br>Festival</h4>
+                                            <p class="card-text">Price: $11.5</p>
+                                            <a href="#" data-name="church Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2nd row -->
+                            <div class="row p-3 ">
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/happy epiphany.png" alt="">
+                                        <div class="card-body">
+                                            
+                                            <h4 class="card-title">Epiphany Festival</h4>
+                                            <p class="card-text">Price: $7.5</p>
+                                            <a href="#" data-name="Epiphany Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/penticoast festival.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Penticoast Festival</h4>
+                                            <p class="card-text">Price: $8.5</p>
+                                            <a href="#" data-name="Penticoast Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/saint chris.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>SaintNicholas Festival</h3> -->
+                                            <h4 class="card-title">Saint Nicholas Festival</h4>
+                                            <p class="card-text">Price: $5.5</p>
+                                            <a href="#" data-name="SaintNicholas Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/risen chris.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Risen Festival</h3> -->
+
+                                            <h4 class="card-title">Risen <br>Festival</h4>
+                                            <p class="card-text">Price: $12.5</p>
+                                            <a href="#" data-name="Risen Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hindu events -->
+                    <div class="tab-pane fade show" id="v-pills-home3">
+                        <!-- Your content for Hindu events -->
+                        <div class="container">
+                            <div class="row p-3">
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/diwali.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Diwali festival</h3> -->
+
+                                            <h4 class="card-title">Diwali <br>Festival</h4>
+                                            <p class="card-text">Price: $13.6</p>
+                                            <a href="#" data-name="Diwali Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/navratri.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Navratri Festival</h3> -->
+                                            <h4 class="card-title">Navratri Festival</h4>
+                                            <p class="card-text">Price: $14.8</p>
+                                            <a href="#" data-name="Navratri Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/holi festival.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Holi <br> Festival</h3> -->
+                                            <h4 class="card-title">holi <br>Festival</h4>
+                                            <p class="card-text">Price: $11.7</p>
+                                            <a href="#" data-name="Holi Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/rakhi festival.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Rakhi <br> Festival</h3> -->
+
+                                            <h4 class="card-title">Rakhi <br>Festival</h4>
+                                            <p class="card-text">Price: $9.5</p>
+                                            <a href="#" data-name="Rakhi Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- 2nd row -->
+                             <div class="row p-3">
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/holi event.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Diwali festival</h3> -->
+
+                                            <h4 class="card-title">Diwali <br>Festival</h4>
+                                            <p class="card-text">Price: $14.0</p>
+                                            <a href="#" data-name="Diwali Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/ganesh.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Ganesh Festival</h3> -->
+
+                                            <h4 class="card-title">Ganesh <br>Festival</h4>
+                                            <p class="card-text">Price: $6.5</p>
+                                            <a href="#" data-name="Ganesh Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/durga.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Durga <br>Festival</h4>
+                                            <p class="card-text">Price: $10.5</p>
+                                            <a href="#" data-name="Durga Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/dusherra.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Dushera Festival</h3> -->
+                                            <h4 class="card-title">Dushera Festival</h4>
+                                            <p class="card-text">Price: $11.5</p>
+                                            <a href="#" data-name="Dushera Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Buddhism events -->
+                    <div class="tab-pane  fade show " id="v-pills-home4">
+                        <!-- Your content for Muslim events -->
+                        <div class="container">
+                            <div class="row p-3">
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/buddha purnima.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>Buddha Purnima</h3> -->
+                                            <h4 class="card-title">Buddha <br>Festival</h4>
+                                            <p class="card-text">Price: $9.0</p>
+                                            <a href="#" data-name="Buddha Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/full moon.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Full Moon Festival</h4>
+                                            <p class="card-text">Price: $15.5</p>
+                                            <a href="#" data-name="Full Moon Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/happy vesak day.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>vesak day</h3> -->
+                                            <h4 class="card-title">Vesak Day Festival</h4>
+                                            <p class="card-text">Price: $8.0</p>
+                                            <a href="#" data-name="Vesak Day Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/meditation buddhisim.png" alt="">
+                                        <div class="card-body">
+                                            <!-- <h3>meditation</h3> -->
+                                            <h4 class="card-title">Meditation Festival</h4>
+                                            <p class="card-text">Price: $9.5</p>
+                                            <a href="#" data-name="Meditation Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2nd row -->
+                            <div class="row p-3">
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/parinava day.png" alt="">
+                                        <div class="card-body">
+                                           
+                                            <h4 class="card-title">Parivana day Festival</h4>
+                                            <p class="card-text">Price: $13.3</p>
+                                            <a href="#" data-name="Parivana day Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/vesak day.png" alt="">
+                                        <div class="card-body">
+                                           
+                                            <h4 class="card-title">Vesak Day Festival</h4>
+                                            <p class="card-text">Price: $11.5</p>
+                                            <a href="#" data-name="Vesak day Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/nirvana day.png" alt="">
+                                        <div class="card-body">
+                                           
+                                            <h4 class="card-title">Nirvana <br>Festival</h4>
+                                            <p class="card-text">Price: $14.5</p>
+                                            <a href="#" data-name="Nirvana Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/sangkiran festival.png" alt="">
+                                        <div class="card-body">
+                                           
+                                            <h4 class="card-title">Sangkiran Festival</h4>
+                                            <p class="card-text">Price: $7.5</p>
+                                            <a href="#" data-name="Sangkiran Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- taiosm Events -->
+                    <div class="tab-pane  fade show " id="v-pills-home5">
+                        <!-- Your content for Muslim events -->
+                        <div class="container">
+                            <div class="row p-3 ">
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/dragon boat.png" alt="">
+                                        <div class="card-body">
+                                           
+                                            <h4 class="card-title">Dragon Boat Festival</h4>
+                                            <p class="card-text">Price: $10.5</p>
+                                            <a href="#" data-name="Dragon Boat Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/qing ming.png" alt="">
+                                        <div class="card-body">
+                                            
+                                            <h4 class="card-title">QingMing Festival</h4>
+                                            <p class="card-text">Price: $10.8</p>
+                                            <a href="#" data-name="QingMing Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/mid autumn.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Mid Autumn Festival</h4>
+                                            <p class="card-text">Price: $11.8</p>
+                                            <a href="#" data-name="Mid Autumn Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/hungry ghost festival.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Hungry Ghost Festival</h4>
+                                            <p class="card-text">Price: $19.5</p>
+                                            <a href="#" data-name="Hungry Ghost Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2nd row -->
+                            <div class="row p-3 ">
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/qingming festival.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Qingming Festival</h4>
+                                            <p class="card-text">Price: $15.8</p>
+                                            <a href="#" data-name="Qingming Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/chineese new year.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Chineese New Year Festival</h4>
+                                            <p class="card-text">Price: $16.4</p>
+                                            <a href="#" data-name="umrah&Hajj Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/chineese ghost.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Ghost <br>Festival</h4>
+                                            <p class="card-text">Price: $12.4</p>
+                                            <a href="#" data-name=" Festival"Ghost data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-12 col-md-4 col-12">
+                                    <div class="card">
+                                        <img src="images3/lantern fes.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Lantern <br>Festival</h4>
+                                            <p class="card-text">Price: $15.8</p>
+                                            <a href="#" data-name="Lantern Festival" data-price="10.5" class="add-to-cart btn btn-dark text-white"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i>
+                                            Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- cart -->
+    <!-- <a href="table.html" class="btn btn-warning">Show Detail</a> -->
+    <table class="show-cart table table-bordered">
+
+    </table>
+ 
+    <!-- Modal -->
+     <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table">
+
+            </table>
+            <div>Total price: $<span class="total-cart"></span>
+            
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger clear-cart">Delete all <i class="fa fa-trash-o"  style='font-size:24px'></i></button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <footer class="container-fluid fmbg">
+        <div class="row text-center ">
+         <div class="col-lg-3 col-sm-6">
+             <div class="single-box">
+                 <img src="/images/logoimg1.png" class="img-fluid" style="height: 80px;" alt=""><br><br>
+                 <p class="text-white">The website footer is the section of content at the very bottom of a web page.</p><br>
+                 <h3>We Accept</h3>
+                 <div class="card-area">
+                     <i class="fab fa-cc-visa"></i>
+                     <i class="fab fa-credit-card"></i>
+                     <i class="fab fa-cc-mastercard"></i>
+                     <i class="fab fa-cc-paypal"></i>
+                 </div>
+             </div>
+         </div>
+    
+         <div class="col-lg-2 col-sm-6 mt-4">
+            <div class="single-box">
+                 <h2>Visit Us</h2>
+                 <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="gallery.html">Gallery</a></li>
+                     <li><a href="about us.html">About Us</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                     <li><a href="feednackk.html">Feedback</a></li>
+                   
+                 </ul>
+            </div>
+         </div>
+         <div class="col-lg-2 col-sm-6 mt-4">
+             <div class="single-box">
+                  <h2>Categary</h2>
+                  <ul>
+                      <li><a href="backup.html">Chiristian</a></li>
+                      <li><a href="backup.html">Islam</a></li>
+                      <li><a href="backup.html">Hinduism</a></li>
+                      <li><a href="backup.html">Taoism</a></li>
+                      <li><a href="backup.html">Buddism</a></li>
+                  </ul>
+             </div>
+          </div>
+          
+          <div class="col-lg-5 col-sm-6 fot4  ">
+             <div class="single-box mt-4">
+                <h2>Follow Us</h2>
+             <p class="text-white">Footers are located in the margin area at the bottom of a page.</p>
+             <div class="input-group mb-3">
+                 <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                 <span class="input-group-text" id="basic-addon2"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+               </div> 
+               <h2>Follow Us On</h2> 
+               <p class="socials text-white">
+                 <i class="fab fa-facebook-f"></i>
+                 <i class="fab fa-dribbble"></i>
+                 <i class="fab fa-pinterest"></i>
+                 <i class="fab fa-twitter"></i>
+               </p>  
+             </div>
+          </div>
+        </div>
+    
+       
+    
+       
+     </footer>
+
+    <!-- END EDMO HTML (Happy Coding!)-->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
